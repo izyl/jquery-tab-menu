@@ -16,6 +16,7 @@ p {
 #tab-menu ul li {
 	float: left;
 	margin: 1px;
+	margin-top: 10px;
 }
 
 #tab-menu ul li a {
@@ -24,6 +25,7 @@ p {
 	background-color: #eeeeee;
 	border-bottom: none;
 	outline: none;
+	padding:5px;
 	border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
 	-webkit-border-top-left-radius: 5px;

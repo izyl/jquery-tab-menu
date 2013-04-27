@@ -74,15 +74,17 @@
 
 			// N'ayez pas peur :D, c'est simple en fait
 			// on sélectionne vers le haut tous les div jusqu'au container du menu (:tabMenu)
-			active.parentsUntil($("#" + settings.tabMenuId), settings.rowElement).each(
-					function() {
-						// pour chaque div on va remonter au parent puis on va choisir le li dont la valeur vaut l'id du div. Sur le a contenu dans ce li on va
-						// mettre
-						// la classe active
-						$(this).parent().find(settings.activeElement + "[" + settings.rowTargetAttr + "=#" + $(this).attr("id") + "]").find("a").addClass(
-								settings.activeClass);
-					});
-
+			active.parentsUntil($("#" + settings.tabMenuId), settings.rowElement).each(function() {
+				// pour chaque div on va remonter au parent puis on va choisir le li dont la valeur vaut l'id du div. Sur le a contenu dans ce li on va
+				// mettre
+				// la classe active
+				$(this).parent().find(settings.activeElement + "[" + settings.rowTargetAttr + "=#" + $(this).attr("id") + "]").find("a").each(function() {
+					// on active le lien
+					$(this).addClass(settings.activeClass);
+				});
+				// on raffiche le div
+				$(this).fadeIn();
+			});
 		}
 
 		// masquer tous les fils des siblings (:frères) de l'onglet actif
@@ -100,7 +102,15 @@
 			// reset les tabs actifs.
 			resetClass(settings.activeClass);
 			// re-set le tab courant.
-			currentTab.addClass(settings.activeClass);
+			showRootRowOnly();
+			activeToTop(currentTab);
+		}
+
+		// seulement le niveau 1 de visible
+		function showRootRowOnly() {
+			$("#" + settings.rootRowId).children("div").each(function() {
+				$(this).hide();
+			});
 		}
 
 		function resetClass(classToRemove) {
