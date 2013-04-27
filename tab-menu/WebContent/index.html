@@ -61,8 +61,6 @@ p {
 				<a target="#row1-1" href="#">SubTab 1-1</a>
 				<a href="#">SubTab 1-2</a>
 				<a class="icon_accept" href="#">SubTab 1-3 Long name with icon for the last tab</a>
-				<!-- haha, muhuhu -->
-				<!-- super important d'inclure le div du sous niveau 1-1 dans le 1 car ca permet à hideSiblings de tous masquer d'un coup -->
 				<div id="row1-1">
 					<a href="#">SubTab 1-1-1</a>
 					<a class="active" href="#">SubTab 1-1-2</a>
@@ -73,12 +71,17 @@ p {
 			<div id="row2">
 				<a href="#">SubTab 2-1</a>
 				<a href="#">SubTab 2-2</a>
-				<a class="icon_accept" href="#">
+				<a class="icon_accept" target="#row2-1" href="#">
 					SubTab 2-3 Long<br /> name with icon for the last tab
 				</a>
 				<a href="#">SubTab 2-4</a>
 				<a href="#">SubTab 2-5</a>
 				<a class="icon_accept" href="#">SubTab 2-6 Long name with icon for the last tab</a>
+				<div id="row2-1">
+					<a href="#">SubTab 2-1-1</a>
+					<a href="#">SubTab 2-1-2</a>
+					<a class="icon_accept" href="#">SubTab 2-1-3 Long name with icon for the last tab</a>
+				</div>
 			</div>
 
 			<div id="row3">
