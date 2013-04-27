@@ -45,50 +45,38 @@ p {
 		<p class="bu">Un menu tabulé multi niveau fait main :D.</p>
 	</div>
 
-	<!-- en fait je sais meme pas pourquoi j'utilise des ul et des li, à remplacer par des <a> seulement et changer les css... -->
 	<div id="tab-menu">
-		<!-- premier niveau d'onglet toujours visible -->
 		<div id="rootRow">
-			<ul>
-				<li value="#row1"><a href="#">Tab 1</a></li>
-				<li value="#row2"><a class="icon_accept" href="#">Tab 2 with icon</a></li>
-				<li value="#row3"><a href="#">Tab 3 Long name for the last tab</a></li>
-			</ul>
+			<!-- premier niveau d'onglet toujours visible -->
+			<a target="#row1" href="#">Tab 1</a>
+			<a target="#row2" class="icon_accept" href="#">Tab 2 with icon</a>
+			<a target="#row3" href="#">Tab 3 Long name for the last tab</a>
 			<div id="row1">
-				<ul>
-					<li id="row1tab1" value="#row1-1"><a href="#">SubTab 1-1</a></li>
-					<li id="row1tab2"><a href="#">SubTab 1-2</a></li>
-					<li id="row1tab3"><a class="icon_accept" href="#">SubTab 1-3 Long name with icon for the last tab</a></li>
-				</ul>
+				<a target="#row1-1" href="#">SubTab 1-1</a>
+				<a href="#">SubTab 1-2</a>
+				<a class="icon_accept" href="#">SubTab 1-3 Long name with icon for the last tab</a>
 				<!-- haha, muhuhu -->
 				<!-- super important d'inclure le div du sous niveau 1-1 dans le 1 car ca permet à hideSiblings de tous masquer d'un coup -->
 				<div id="row1-1">
-					<ul>
-						<li id="row1-1tab1"><a href="#">SubTab 1-1-1</a></li>
-						<li id="row1-1tab2" class="active"><a href="#">SubTab 1-1-2</a></li>
-						<li id="row1-1tab3"><a class="icon_accept" href="#">SubTab 1-1-3 Long name with icon for the last tab</a></li>
-					</ul>
+					<a href="#">SubTab 1-1-1</a>
+					<a class="active" href="#">SubTab 1-1-2</a>
+					<a class="icon_accept" href="#">SubTab 1-1-3 Long name with icon for the last tab</a>
 				</div>
 			</div>
 
 			<div id="row2">
-				<ul>
-					<li id="row2tab1"><a href="#">SubTab 2-1</a></li>
-					<li id="row2tab2"><a href="#">SubTab 2-2</a></li>
-					<li id="row2tab3"><a class="icon_accept" href="#">SubTab 2-3 Long name with icon for the last tab</a></li>
-					<li id="row2tab4"><a href="#">SubTab 2-4</a></li>
-					<li id="row2tab5"><a href="#">SubTab 2-5</a></li>
-					<li id="row2tab6"><a class="icon_accept" href="#">SubTab 2-6 Long name with icon for the last tab</a></li>
-				</ul>
+				<a href="#">SubTab 2-1</a>
+				<a href="#">SubTab 2-2</a>
+				<a class="icon_accept" href="#">SubTab 2-3 Long name with icon for the last tab</a>
+				<a href="#">SubTab 2-4</a>
+				<a href="#">SubTab 2-5</a>
+				<a class="icon_accept" href="#">SubTab 2-6 Long name with icon for the last tab</a>
 			</div>
 
-
 			<div id="row3">
-				<ul>
-					<li id="row3tab1"><a href="#">SubTab 3-1</a></li>
-					<li id="row3tab2"><a href="#">SubTab 3-2</a></li>
-					<li id="row3tab3"><a href="#">SubTab 3-3 Long name with icon for the last tab</a></li>
-				</ul>
+				<a href="#">SubTab 3-1</a>
+				<a href="#">SubTab 3-2</a>
+				<a href="#">SubTab 3-3 Long name with icon for the last tab</a>
 			</div>
 		</div>
 
