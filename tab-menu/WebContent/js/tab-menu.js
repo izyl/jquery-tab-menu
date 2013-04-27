@@ -37,6 +37,8 @@
 				buildMenu(settings.jsonMenu);
 			}
 
+			equalizeRows();
+
 			// le a marqué avec la classe active à l'ouverture de la page devient le tab courant
 			currentTab = $("#" + settings.tabMenuId + " " + settings.tabElement + "." + settings.activeClass);
 			var active = currentTab;
@@ -68,6 +70,13 @@
 			});
 
 		});
+
+		
+		function equalizeRows() {
+			$("#" + settings.tabMenuId + " " + settings.rowElement).each(function() {
+				$(this).children(settings.tabElement).equalHeights();
+			});
+		}
 
 		// cache toutes les lignes
 		function hideAll() {

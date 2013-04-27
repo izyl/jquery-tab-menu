@@ -1,33 +1,29 @@
 body {
 	font-size: 100%;
-}
-
-p {
-	margin: 0;
-	padding: 0;
+	color: #4141E2;
 }
 
 #tab-menu a {
-	border: 2px solid #ccc;
 	text-decoration: none;
-	background-color: #eeeeee;
+	border: 1px solid #aaa;
 	border-bottom: none;
-	outline: none;
-	padding: 5px;
+	background-color: #fff;
 	border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
+	padding: 5px;
 	float: left;
-	margin: 1px;
+	text-align: center;
 }
 
 #tab-menu a,#tab-menu a:visited {
-	color: blue;
+	color: #385FFF;
 }
 
 #tab-menu a.active {
-	background-color: #fff;
+	/*font-weight: bold;*/
+	color: #0000FF;
+	background-color: #eeefff;
+	border: 1px solid #888;
+	border-bottom: none;
 }
 
 #tab-menu a.icon_accept {
@@ -38,6 +34,5 @@ p {
 }
 
 #tab-menu div {
-	display: none;
 	clear: both;
 }
