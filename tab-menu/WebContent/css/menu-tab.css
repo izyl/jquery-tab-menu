@@ -1,0 +1,51 @@
+body {
+	font-size: 100%;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+#tab-menu ul {
+	list-style: none;
+	font: 0.75em arial;
+	margin: 0;
+}
+
+#tab-menu ul li {
+	float: left;
+	margin: 1px;
+}
+
+#tab-menu ul li a {
+	border: 1px solid #ccc;
+	text-decoration: none;
+	background-color: #eeeeee;
+	border-bottom: none;
+	outline: none;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+
+#tab-menu ul li a,#tab-menu ul li a:visited {
+	color: blue;
+}
+
+#tab-menu ul li a.active {
+	background-color: #fff;
+}
+
+#tab-menu ul li a.icon_accept {
+	background-image: url(../img/accept.png);
+	background-position: 5px;
+	background-repeat: no-repeat;
+	padding-left: 24px;
+}
+
+#tab-menu div {
+	display: none;
+	clear: both;
+}

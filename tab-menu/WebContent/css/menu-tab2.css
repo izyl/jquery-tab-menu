@@ -1,0 +1,55 @@
+
+#tab-menu ul {
+  border: 1px solid red;
+  position: absolute;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+#tab-menu ul li {
+  text-align: center;
+  border: 1px solid green;
+  float: left;
+  width:auto;
+  display: block;
+}
+
+#tab-menu ul li a {
+  
+  width: 100%;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  background-color: #eeeeee;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+}
+
+#tab-menu ul li a,#tab-menu ul li a:visited {
+  color: blue;
+}
+
+#tab-menu ul li a:hover {
+  background-color: #dddddd;
+}
+
+#tab-menu ul li.active a {
+  background-color: #fff;
+}
+
+#tab-menu ul li.active a:hover {
+  background-color: #fff;
+  border-bottom: none;
+}
+
+#tab-menu ul li a.icon_accept {
+  background-image: url(../img/accept.png);
+  background-position: 5px;
+  background-repeat: no-repeat;
+  padding-left: 24px;
+}
