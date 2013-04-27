@@ -6,10 +6,12 @@ body {
 #tab-menu a {
 	text-decoration: none;
 	border: 1px solid #aaa;
+	border-top:1px solid #999;
 	border-bottom: none;
 	background-color: #fff;
 	border-radius: 5px 5px 0 0;
 	padding: 5px;
+	margin:1px;
 	float: left;
 	text-align: center;
 }
@@ -18,19 +20,25 @@ body {
 	color: #385FFF;
 }
 
+#tab-menu a.warning{
+	background-color: #FFDC9B;
+	font-weight: bold;
+}
+
 #tab-menu a.active {
 	/*font-weight: bold;*/
 	color: #0000FF;
 	background-color: #eeefff;
-	border: 1px solid #888;
+	border: 2px solid #888;
+	border-top:2px solid #888;
 	border-bottom: none;
 }
 
 #tab-menu a.icon_accept {
 	background-image: url(../img/accept.png);
-	background-position: 5px;
 	background-repeat: no-repeat;
-	padding-left: 24px;
+	background-position:center right;
+	padding-right: 24px;
 }
 
 #tab-menu div {

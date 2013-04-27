@@ -26,7 +26,7 @@
 			timeout : 500,
 			/**
 			 * la structure du menu récupéré en json, s'il n'est pas vide, il sera injecté dans le rootMenuId (qui devra donc être vide avant l'injection). Pour
-			 * vpm, il devra contenir le nom, le href et ses fils.
+			 * vpm, il devra contenir le nom, le href et ses fils ainsi qu'un champs additionel de class css optionelle.
 			 */
 			jsonMenu : {}
 		}, options);
@@ -71,7 +71,6 @@
 
 		});
 
-		
 		function equalizeRows() {
 			$("#" + settings.tabMenuId + " " + settings.rowElement).each(function() {
 				$(this).children(settings.tabElement).equalHeights();
