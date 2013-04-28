@@ -23,8 +23,7 @@ body {
 #tab-menu div.tab.warning {
 	background-color: #FFDC9B;
 	font-weight: bold;
-	border: 2px solid #888;
-	border-top: 2px solid #888;
+	border: 1px solid #888;
 	border-bottom: none;
 }
 
