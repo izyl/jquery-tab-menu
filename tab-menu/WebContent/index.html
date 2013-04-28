@@ -11,13 +11,13 @@
 <link rel="stylesheet" media="screen" href="css/menu-tab.css" />
 
 <style type="text/css">
-#legend {
+#example {
 	border-radius: 5px;
 	border: 2px solid gray;
 	text-align: center;
 	padding: 0.5em;
 	margin: 1em;
-	width: 300px;
+	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #D2E5C7;
@@ -25,10 +25,20 @@
 
 p {
 	margin: .5em;
+	
+}
+
+#content {
+	border: 1px solid #5C963D;
+	background-color: white;
+	text-align: left;
 }
 
 .bu { /*text-decoration: underline;*/
 	font-weight: bold;
+	border: 1px solid #5C963D;
+	border-radius: 5px 5px 5px 5px;
+	background-color: white;
 }
 </style>
 
@@ -43,96 +53,139 @@ p {
 </head>
 <body>
 
-	<div id="legend">
+	<div id="example">
 		<p class="bu">Menu tabulé multi niveau</p>
-	</div>
+		<div id="tab-menu">
+			<div id="rootRow" class="row">
 
-	<div id="tab-menu">
-		<div id="rootRow" class="row">
-
-			<!-- premier niveau d'onglet toujours visible -->
-			<div class="tab">
-				<a target="#row1" href="#">Tab 1</a>
-			</div>
-			<div class="tab icon_accept">
-				<a target="#row2" href="#">Tab 2 with icon</a>
-			</div>
-			<div class="tab">
-				<a target="#row3" href="#"> Tab 3 </a>
-			</div>
-
-			<div id="row1" class="row">
+				<!-- premier niveau d'onglet toujours visible -->
 				<div class="tab">
-					<a target="#row1-1" href="#">SubTab 1-1</a>
-				</div>
-				<div class="tab">
-					<a href="#">SubTab 1-2</a>
-				</div>
-				<!-- simulation de classe css optionnelles de l'objet json -->
-				<div class="tab warning icon_accept">
-					<a href="#">
-						SubTab 1-3 Long name with icon <br /> 1br and optional warning css
-					</a>
-				</div>
-				<div id="row1-1" class="row">
-					<div class="tab">
-						<a href="#">SubTab 1-1-1</a>
-					</div>
-					<div class="tab active">
-						<a href="#">SubTab 1-1-2</a>
-					</div>
-					<div class="tab">
-						<a href="#">SubTab 1-1-3 Long name with icon for the last tab</a>
-					</div>
-				</div>
-			</div>
-
-			<div id="row2" class="row">
-				<div class="tab">
-					<a href="#">SubTab 2-1</a>
-				</div>
-				<div class="tab">
-					<a href="#">SubTab 2-2</a>
+					<a target="#row1" href="#">Tab 1</a>
 				</div>
 				<div class="tab icon_accept">
-					<a target="#row2-1" href="#">
-						SubTab 2-3 Long<br /> name with icon for the last tab
-					</a>
+					<a target="#row2" href="#">Tab 2 with icon</a>
 				</div>
 				<div class="tab">
-					<a href="#">SubTab 2-4</a>
+					<a target="#row3" href="#"> Tab 3 </a>
 				</div>
-				<div class="tab">
-					<a href="#">SubTab 2-5</a>
-				</div>
-				<div class="tab icon_accept">
-					<a href="#">SubTab 2-6 Long name with icon for the last tab</a>
-				</div>
-				<div id="row2-1" class="row">
+
+				<div id="row1" class="row">
 					<div class="tab">
-						<a href="#">SubTab 2-1-1</a>
+						<a target="#row1-1" href="#">SubTab 1-1</a>
 					</div>
 					<div class="tab">
-						<a href="#">SubTab 2-1-2</a>
+						<a href="#">SubTab 1-2</a>
+					</div>
+					<!-- simulation de classe css optionnelles de l'objet json -->
+					<div class="tab warning icon_accept">
+						<a href="#">
+							SubTab 1-3 Long name with icon <br /> 1br and optional warning css
+						</a>
+					</div>
+					<div id="row1-1" class="row">
+						<div class="tab">
+							<a href="#">SubTab 1-1-1</a>
+						</div>
+						<div class="tab active">
+							<a href="#">SubTab 1-1-2</a>
+						</div>
+						<div class="tab">
+							<a href="#">SubTab 1-1-3 Long name with icon for the last tab</a>
+						</div>
+					</div>
+				</div>
+
+				<div id="row2" class="row">
+					<div class="tab">
+						<a href="#">SubTab 2-1</a>
+					</div>
+					<div class="tab">
+						<a href="#">SubTab 2-2</a>
 					</div>
 					<div class="tab icon_accept">
-						<a href="#">SubTab 2-1-3 Long name with icon for the last tab</a>
+						<a target="#row2-1" href="#">
+							SubTab 2-3 Long<br /> name with icon for the last tab
+						</a>
+					</div>
+					<div class="tab">
+						<a href="#">SubTab 2-4</a>
+					</div>
+					<div class="tab">
+						<a href="#">SubTab 2-5</a>
+					</div>
+					<div class="tab icon_accept">
+						<a href="#">SubTab 2-6 Long name with icon for the last tab</a>
+					</div>
+					<div id="row2-1" class="row">
+						<div class="tab">
+							<a href="#">SubTab 2-1-1</a>
+						</div>
+						<div class="tab">
+							<a href="#">SubTab 2-1-2</a>
+						</div>
+						<div class="tab icon_accept">
+							<a href="#">SubTab 2-1-3 Long name with icon for the last tab</a>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div id="row3" class="row">
-				<div class="tab">
-					<a href="#">SubTab 3-1</a>
-				</div>
-				<div class="tab">
-					<a href="#">SubTab 3-2</a>
-				</div>
-				<div class="tab">
-					<a href="#">SubTab 3-3 Long name</a>
+				<div id="row3" class="row">
+					<div class="tab">
+						<a href="#">SubTab 3-1</a>
+					</div>
+					<div class="tab">
+						<a href="#">SubTab 3-2</a>
+					</div>
+					<div class="tab">
+						<a href="#">SubTab 3-3 Long name</a>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div id="content">
+			<p>Et hanc quidem praeter oppida multa duae civitates exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam Claudius Caesar. Isaura
+				enim antehac nimium potens, olim subversa ut rebellatrix interneciva aegre vestigia claritudinis pristinae monstrat admodum pauca.</p>
+
+			<p>Illud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine abes, tantum te a verborum
+				libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint, erubescas. Quis est enim, cui via ista non pateat, qui isti aetati
+				atque etiam isti dignitati non possit quam velit petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est
+				eorum, qui te agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.</p>
+
+			<p>Inter haec Orfitus praefecti potestate regebat urbem aeternam ultra modum delatae dignitatis sese efferens insolenter, vir quidem prudens et forensium
+				negotiorum oppido gnarus, sed splendore liberalium doctrinarum minus quam nobilem decuerat institutus, quo administrante seditiones sunt concitatae graves
+				ob inopiam vini: huius avidis usibus vulgus intentum ad motus asperos excitatur et crebros.</p>
+
+			<p>Homines enim eruditos et sobrios ut infaustos et inutiles vitant, eo quoque accedente quod et nomenclatores adsueti haec et talia venditare, mercede
+				accepta lucris quosdam et prandiis inserunt subditicios ignobiles et obscuros.</p>
+
+			<p>Quam ob rem circumspecta cautela observatum est deinceps et cum edita montium petere coeperint grassatores, loci iniquitati milites cedunt. ubi autem
+				in planitie potuerint reperiri, quod contingit adsidue, nec exsertare lacertos nec crispare permissi tela, quae vehunt bina vel terna, pecudum ritu inertium
+				trucidantur.</p>
+
+			<p>Alios autem dicere aiunt multo etiam inhumanius (quem locum breviter paulo ante perstrinxi) praesidii adiumentique causa, non benevolentiae neque
+				caritatis, amicitias esse expetendas; itaque, ut quisque minimum firmitatis haberet minimumque virium, ita amicitias appetere maxime; ex eo fieri ut
+				mulierculae magis amicitiarum praesidia quaerant quam viri et inopes quam opulenti et calamitosi quam ii qui putentur beati.</p>
+
+			<p>Nam sole orto magnitudine angusti gurgitis sed profundi a transitu arcebantur et dum piscatorios quaerunt lenunculos vel innare temere contextis
+				cratibus parant, effusae legiones, quae hiemabant tunc apud Siden, isdem impetu occurrere veloci. et signis prope ripam locatis ad manus comminus
+				conserendas denseta scutorum conpage semet scientissime praestruebant, ausos quoque aliquos fiducia nandi vel cavatis arborum truncis amnem permeare
+				latenter facillime trucidarunt.</p>
+
+			<p>Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco
+				conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo
+				consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis
+				delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.</p>
+
+			<p>His cognitis Gallus ut serpens adpetitus telo vel saxo iamque spes extremas opperiens et succurrens saluti suae quavis ratione colligi omnes iussit
+				armatos et cum starent attoniti, districta dentium acie stridens adeste inquit viri fortes mihi periclitanti vobiscum.</p>
+
+			<p>Et quoniam inedia gravi adflictabantur, locum petivere Paleas nomine, vergentem in mare, valido muro firmatum, ubi conduntur nunc usque commeatus
+				distribui militibus omne latus Isauriae defendentibus adsueti. circumstetere igitur hoc munimentum per triduum et trinoctium et cum neque adclivitas ipsa
+				sine discrimine adiri letali, nec cuniculis quicquam geri posset, nec procederet ullum obsidionale commentum, maesti excedunt postrema vi subigente maiora
+				viribus adgressuri.</p>
+		</div>
 	</div>
+
+
 </body>
 </html>

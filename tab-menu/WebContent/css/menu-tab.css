@@ -3,6 +3,10 @@ body {
 	color: #469135;
 }
 
+#tab-menu {
+	border: 1px solid #5C963D;
+}
+
 #tab-menu div.tab {
 	border: 1px solid #aaa;
 	border-top: 1px solid #999;
@@ -46,4 +50,6 @@ body {
 
 #tab-menu div.row {
 	clear: both;
+	background-color: #84CE5F;
+	overflow: hidden;
 }
