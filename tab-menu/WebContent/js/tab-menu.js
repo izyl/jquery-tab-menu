@@ -68,7 +68,7 @@
 			});
 
 		});
-		
+
 		function equalizeRows() {
 			$("#" + settings.tabMenuId + " " + settings.rowElement).each(function() {
 				$(this).children(settings.tabElement).equalHeights();
@@ -89,7 +89,6 @@
 			reset();
 			// on habille l'onglet actif
 			tab.addClass(settings.activeClass);
-			console.log(tab);
 			// et on montre le div associé
 			$(tab.find("a").attr(settings.rowTargetAttr)).show();
 
@@ -119,7 +118,7 @@
 
 		// prend un menu json et l'injecte dans le tabMenu
 		function buildMenu(jsonMenu) {
-			console.log("buidling jsonMenu");
+			// console.log("buidling jsonMenu");
 		}
 
 	};

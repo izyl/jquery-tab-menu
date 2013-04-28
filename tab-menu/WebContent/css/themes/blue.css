@@ -1,0 +1,44 @@
+body {
+	font-size: 100%;
+	color: #3D74FF;
+}
+
+#tab-menu div.tab {
+	border: 1px solid #aaa;
+	background-color: #6886FF;
+}
+
+#tab-menu div.tab a {
+	color: #fff;
+}
+
+#tab-menu div.tab.active {
+	background-color: #fff;
+}
+
+#tab-menu div.tab.active a {
+	color: #3D74FF;
+}
+
+#tab-menu div.tab.warning {
+	background-color: #FFC95E;
+	border: 1px solid #888;
+}
+
+#example {
+	text-align: center;
+	padding: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+
+#content {
+	text-align: left;
+}
+
+.bu { /*text-decoration: underline;*/
+	border: 2px solid #3D74FF;
+	border-radius: 5px 5px 5px 5px;
+	width: 300px;
+}
