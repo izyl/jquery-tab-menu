@@ -48,47 +48,92 @@ p {
 	</div>
 
 	<div id="tab-menu">
-		<div id="rootRow">
+		<div id="rootRow" class="row">
 
 			<!-- premier niveau d'onglet toujours visible -->
-			<a target="#row1" href="#">Tab 1</a>
-			<a target="#row2" class="icon_accept"  href="#">Tab 2 with icon</a>
-			<a target="#row3" href="#">
-				Tab 3
-			</a>
+			<div class="tab">
+				<a target="#row1" href="#">Tab 1</a>
+			</div>
+			<div class="tab icon_accept">
+				<a target="#row2" href="#">Tab 2 with icon</a>
+			</div>
+			<div class="tab">
+				<a target="#row3" href="#"> Tab 3 </a>
+			</div>
 
-			<div id="row1">
-				<a target="#row1-1" href="#">SubTab 1-1</a>
-				<a href="#">SubTab 1-2</a>
+			<div id="row1" class="row">
+				<div class="tab">
+					<a target="#row1-1" href="#">SubTab 1-1</a>
+				</div>
+				<div class="tab">
+					<a href="#">SubTab 1-2</a>
+				</div>
 				<!-- simulation de classe css optionnelles de l'objet json -->
-				<a class="icon_accept warning" href="#">SubTab 1-3 Long name with icon <br/> 1br and optional css like warning</a>
-				<div id="row1-1">
-					<a href="#">SubTab 1-1-1</a>
-					<a class="active" href="#">SubTab 1-1-2</a>
-					<a class="icon_accept" href="#">SubTab 1-1-3 Long name with icon for the last tab</a>
+				<div class="tab warning icon_accept">
+					<a href="#">
+						SubTab 1-3 Long name with icon <br /> 1br and optional css like warning
+					</a>
+				</div>
+				<div id="row1-1" class="row">
+					<div class="tab">
+						<a href="#">SubTab 1-1-1</a>
+					</div>
+					<div class="tab active">
+						<a href="#">SubTab 1-1-2</a>
+					</div>
+					<div class="tab">
+						<a href="#">SubTab 1-1-3 Long name with icon for the last tab</a>
+					</div>
 				</div>
 			</div>
 
-			<div id="row2">
-				<a href="#">SubTab 2-1</a>
-				<a href="#">SubTab 2-2</a>
-				<a class="icon_accept" target="#row2-1" href="#">
-					SubTab 2-3 Long<br /> name with icon for the last tab
-				</a>
-				<a href="#">SubTab 2-4</a>
-				<a href="#">SubTab 2-5</a>
-				<a class="icon_accept" href="#">SubTab 2-6 Long name with icon for the last tab</a>
-				<div id="row2-1">
-					<a href="#">SubTab 2-1-1</a>
-					<a href="#">SubTab 2-1-2</a>
-					<a class="icon_accept" href="#">SubTab 2-1-3 Long name with icon for the last tab</a>
+			<div id="row2" class="row">
+				<div class="tab">
+					<a href="#">SubTab 2-1</a>
+				</div>
+				<div class="tab">
+					<a href="#">SubTab 2-2</a>
+				</div>
+				<div class="tab">
+					<div class="icon_accept"></div>
+					<a target="#row2-1" href="#">
+						SubTab 2-3 Long<br /> name with icon for the last tab
+					</a>
+				</div>
+				<div class="tab">
+					<a href="#">SubTab 2-4</a>
+				</div>
+				<div class="tab">
+					<a href="#">SubTab 2-5</a>
+				</div>
+				<div class="tab">
+					<div class="icon_accept"></div>
+					<a href="#">SubTab 2-6 Long name with icon for the last tab</a>
+				</div>
+				<div id="row2-1" class="row">
+					<div class="tab">
+						<a href="#">SubTab 2-1-1</a>
+					</div>
+					<div class="tab">
+						<a href="#">SubTab 2-1-2</a>
+					</div>
+					<div class="tab">
+						<div class="icon_accept"></div>
+						<a href="#">SubTab 2-1-3 Long name with icon for the last tab</a>
+					</div>
 				</div>
 			</div>
 
-			<div id="row3">
-				<a href="#">SubTab 3-1</a>
-				<a href="#">SubTab 3-2</a>
-				<a href="#">SubTab 3-3 Long name with icon for the last tab</a>
+			<div id="row3" class="row">
+				<div class="tab">
+					<a href="#">SubTab 3-1</a>
+				</div>
+				<div class="tab">
+					<a href="#">SubTab 3-2</a>
+				</div>
+				<div class="tab">
+					<a href="#">SubTab 3-3 Long name with icon for the last tab</a>
+				</div>
 			</div>
 		</div>
 	</div>

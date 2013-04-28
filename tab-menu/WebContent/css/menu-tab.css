@@ -1,46 +1,50 @@
 body {
 	font-size: 100%;
-	color: #4141E2;
+	color: #469135;
 }
 
-#tab-menu a {
-	text-decoration: none;
+#tab-menu div.tab {
 	border: 1px solid #aaa;
-	border-top:1px solid #999;
+	border-top: 1px solid #999;
 	border-bottom: none;
-	background-color: #fff;
+	background-color: #D2E5C7;
 	border-radius: 5px 5px 0 0;
 	padding: 5px;
-	margin:1px;
+	margin: 1px;
 	float: left;
 	text-align: center;
 }
 
-#tab-menu a,#tab-menu a:visited {
-	color: #385FFF;
+#tab-menu div.tab a {
+	text-decoration: none;
+	color: #469135;
 }
 
-#tab-menu a.warning{
+#tab-menu div.tab.warning {
 	background-color: #FFDC9B;
 	font-weight: bold;
-}
-
-#tab-menu a.active {
-	/*font-weight: bold;*/
-	color: #0000FF;
-	background-color: #eeefff;
 	border: 2px solid #888;
-	border-top:2px solid #888;
+	border-top: 2px solid #888;
 	border-bottom: none;
 }
 
-#tab-menu a.icon_accept {
+#tab-menu div.tab.active {
+	background-color: #84CE5F;
+	border: 2px solid #5C963D;
+	border-bottom: none;
+}
+
+#tab-menu div.tab.active a { /*font-weight: bold;*/
+	color: #fff;
+}
+
+#tab-menu div.tab.icon_accept {
 	background-image: url(../img/accept.png);
 	background-repeat: no-repeat;
-	background-position:center right;
+	background-position: center right;
 	padding-right: 24px;
 }
 
-#tab-menu div {
+#tab-menu div.row {
 	clear: both;
 }
