@@ -15,7 +15,7 @@ A tabular multi level menu plugin for jquery. tabMenu allows you to navigate thr
 
 Build your html menu either directly in the dom or by injecting a json menu like this :
 	
-	/** init menu from json structure
+	/** init menu from json structure */
 	$("#tab-menu").tabMenu({
 	  		jsonMenu : myJsonMenu
 	});
