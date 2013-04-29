@@ -5,7 +5,7 @@ A tabular multi level menu plugin for jquery. tabMenu allows you to navigate thr
 
 <ul>
 <li>hoverIntent is used for ergonomic behaviour (ie : delaying hover events)</li>
-<li>equalsHeights is used to equalize row tabs but im trying to replace it with pure css</li>
+<li>tab heights equalized with pure css : display:table-cell</li>
 <li>css are separated between core css (tab-menu.css) and themes. You shouldn't have to modify tab-menu.css.
   if you need to modify the css, just copy-paste one from the themes folder and modify it.</li>
 <li>supports json menus injection</li>
