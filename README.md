@@ -11,12 +11,14 @@ A tabular multi level menu plugin for jquery. tabMenu allows you to navigate thr
 <li>supports json menus injection</li>
 </ul>
 
-How to use it :
+<b>How to use it :</b>
 
 Build your html menu either directly in the dom or by injecting a json menu like this :
-$("#tab-menu").tabMenu({
-  		jsonMenu : myJsonMenu
-});
+	
+	/** init menu from json structure
+	$("#tab-menu").tabMenu({
+	  		jsonMenu : myJsonMenu
+	});
 
 You can pass in additionnal options :
 	
