@@ -30,18 +30,17 @@
 
 		return this.each(function() {
 
+			// si on recoit un menu json, on le construit et on l'injecte dans le html
 			if (!$.isEmptyObject(settings.jsonMenu)) {
 				buildMenu(settings.jsonMenu);
 			}
 
-			equalizeRows();
-
-			/** le tab courant, calculé à l'initialisation du plugin (on pourrait exposer un setter) */
-			// le a marqué avec la classe active à l'ouverture de la page devient le tab courant
+			// le tab courant, calculé à l'initialisation du plugin (on pourrait exposer un setter)
 			var currentTab = $("#" + settings.tabMenuId + " " + settings.tabElement + "." + settings.activeClass);
 			var selection = currentTab;
 			// on active le tag courant
 			activate(selection);
+			$("#" + settings.tabMenuId).height($("#" + settings.tabMenuId).height());
 
 			// quand on sort du menu on rétabli l'onglet courant
 			$("#" + settings.tabMenuId).hoverIntent({
