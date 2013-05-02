@@ -1,11 +1,31 @@
+@font-face {
+	font-family: "segoe";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../../font/segoesc.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "segoe";
+	font-style: normal;
+	font-weight: bold;
+	src: url(../../font/segoescb.ttf) format("truetype");
+}
+
 body {
 	font-size: 100%;
 	color: #3D74FF;
 }
 
+#rootRow>div.tab {
+	border-radius: 8px 8px 0px 0px;
+}
+
 #tab-menu div.tab {
 	border: 1px solid #aaa;
 	background-color: #6886FF;
+	padding: 4px;
+	margin: 1px;
 }
 
 #tab-menu div.tab a {
@@ -41,8 +61,10 @@ body {
 	text-align: left;
 }
 
-.bu { /*text-decoration: underline;*/
-	border: 2px solid #3D74FF;
+.bu {
+	border: 2px solid #6886FF;
 	border-radius: 5px 5px 5px 5px;
 	width: 300px;
+	font-family: "segoe";
+	color: #6886FF;
 }

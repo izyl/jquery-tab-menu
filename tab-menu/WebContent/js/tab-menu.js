@@ -68,12 +68,6 @@
 
 		});
 
-		function equalizeRows() {
-			$("#" + settings.tabMenuId + " " + settings.rowElement).each(function() {
-				$(this).children(settings.tabElement).equalHeights();
-			});
-		}
-
 		// cache toutes les lignes
 		function hideAll() {
 

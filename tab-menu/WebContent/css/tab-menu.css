@@ -1,40 +1,36 @@
 #tab-menu {
 	border-bottom: none;
+	position: relative;
 }
 
 #tab-menu div.tab {
 	border-bottom: none;
-	border-radius: 5px 5px 0 0;
-	padding: 3px; margin-bottom : 0;
 	text-align: center;
-	display: table-cell;
-	margin-bottom: 0;
+	float: left;
 }
 
 #tab-menu div.tab a {
 	text-decoration: none;
+	float: left;
 }
 
 #tab-menu div.tab.warning {
 	font-weight: bold;
-	border-bottom: none;
 }
 
 #tab-menu div.tab.active {
-	border-bottom: none;
+	
 }
 
-#tab-menu div.tab.icon_accept {
+#tab-menu div.icon_accept {
 	background-image: url(../img/accept.png);
 	background-repeat: no-repeat;
+	padding-right: 16px;
 	background-position: center right;
-	padding-right: 24px;
 }
 
 #tab-menu div.row {
-	margin: 1px;
 	clear: both;
-	margin-bottom: 0;
+	margin: 0;
 	overflow: hidden;
-	position: relative;
 }

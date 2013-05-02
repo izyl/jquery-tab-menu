@@ -1,0 +1,131 @@
+body {
+	font-size: 90%;
+	color: #000;
+	font-family: "DejaVu Sans", "VPM Unicode";
+}
+
+@font-face {
+	font-family: "segoe";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../../font/segoesc.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "segoe";
+	font-style: normal;
+	font-weight: bold;
+	src: url(../../font/segoescb.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "VPM Unicode";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../../DejaVuSans.ttf) format("truetype");
+}
+
+#tab-menu {
+	font-size: 75%;
+	line-height: normal;
+	border: 2px solid #007FFF;
+	font-weight: bold;
+	font-size: 75%;
+}
+
+#tab-menu div.row {
+	border: solid 1px #fff;
+	border-left: none;
+	border-right: none;
+	background-color: #B2CEFF;
+}
+
+#tab-menu>div.row {
+	background-color: #fff;
+}
+
+#tab-menu div.tab {
+	border: 1px solid #fff;
+	border-left: none;
+	border-top: none;
+}
+
+#rootRow>div.tab {
+	background: url("../../img/tab_left.gif") no-repeat left top;
+}
+
+#rootRow>div.tab {
+	padding-left: 14px;
+}
+
+#tab-menu div.tab a {
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+}
+
+#rootRow>div.tab a {
+	background: url("../../img/tab_right.gif") no-repeat right top;
+	padding-right: 14px;
+}
+
+#rootRow>div.tab.alert {
+	background-position: 0 -300px;
+	background-color: none;
+}
+
+#tab-menu div.tab.alert {
+	background-color: #FFA826;
+}
+
+tab-menu div.tab.alert.icon_accept {
+	background-image: url(../img/accept.png) no-repeat;
+	background-position: center right;
+	padding-right: 16px;
+}
+
+#rootRow>div.tab.alert a {
+	background-position: 100% -300px;
+}
+
+#tab-menu div.tab.active {
+	background-color: #007FFF;
+}
+
+#tab-menu div.tab.active {
+	background-position: 0 -150px;
+}
+
+#tab-menu div.tab.active a {
+	background-position: 100% -150px;
+}
+
+#tab-menu div.tab.active.icon_accept {
+	background-image: url(../img/accept.png) no-repeat;
+	background-position: center right;
+	padding-right: 16px;
+}
+
+#example {
+	text-align: center;
+	padding: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+
+#content {
+	border: 2px solid #007FFF;
+	border-top: none;
+	text-align: left;
+	top: 0;
+	padding: 5px;
+}
+
+.bu { /*text-decoration: underline;*/
+	border: 2px solid #007FFF;
+	border-radius: 5px 5px 5px 5px;
+	width: 300px;
+	font-family: "segoe";
+	color: #FF7A44;
+}
